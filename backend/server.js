@@ -10,6 +10,9 @@ app.use(cors());
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Portfolio backend is running!");
+});
 
 // EMAIL CONFIGURATION
 
