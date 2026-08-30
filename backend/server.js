@@ -87,14 +87,17 @@ app.post("/api/contact", async (req, res) => {
 
         // Resend error
         if (error) {
+    console.error("========== RESEND ERROR ==========");
+    console.error("Name:", error.name);
+    console.error("Message:", error.message);
+    console.error("Status Code:", error.statusCode);
+    console.error("Full Error:", JSON.stringify(error, null, 2));
+    console.error("===================================");
 
-            console.error("Resend error:", error);
-
-            return res.status(500).json({
-                message: "Failed to send email."
-            });
-
-        }
+    return res.status(500).json({
+        message: "Failed to send email."
+    });
+}
 
 
         console.log("Email sent successfully:", data);
