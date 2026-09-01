@@ -429,6 +429,66 @@ nav a:hover::after {
   color: black;
 }
 
+/* WORK EXPERIENCE */
+
+.experience-container {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+}
+
+.experience-card {
+  display: flex;
+  gap: 25px;
+  padding: 30px;
+  background: #111a2e;
+  border-radius: 15px;
+  text-align: left;
+  border: 1px solid transparent;
+  transition: 0.4s;
+}
+
+.experience-card:hover {
+  transform: translateY(-8px);
+  border-color: #00e5ff;
+  box-shadow: 0 20px 40px rgba(0, 229, 255, 0.15);
+}
+
+.experience-icon {
+  min-width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #00e5ff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.experience-content h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.experience-content h4 {
+  color: #00e5ff;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.experience-date {
+  display: inline-block;
+  margin: 8px 0 12px;
+  color: #a8b2d1;
+  font-size: 14px;
+}
+
+.experience-content p {
+  color: #a8b2d1;
+  line-height: 1.7;
+}
 
 /* PROJECTS */
 
